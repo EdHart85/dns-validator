@@ -1,0 +1,140 @@
+# ============================================================================
+# DNS Domain Validator - Example Domains List
+# ============================================================================
+# This file contains example domains for testing the DNS validator script.
+# Format: One domain per line
+# 
+# Rules:
+#   - Lines starting with # are comments and will be ignored
+#   - Blank lines are ignored
+#   - One domain per line in FQDN format
+#   - Leading and trailing whitespace is automatically trimmed
+#
+# Usage:
+#   ./dns_validator.sh -f domains.txt
+#   ./dns_validator.sh -f domains.txt -s 8.8.8.8 -t 10
+# ============================================================================
+
+# ============================================================================
+# MAJOR TECHNOLOGY COMPANIES
+# ============================================================================
+google.com
+github.com
+microsoft.com
+amazon.com
+apple.com
+facebook.com
+linkedin.com
+twitter.com
+instagram.com
+tiktok.com
+
+# ============================================================================
+# POPULAR WEB SERVICES
+# ============================================================================
+stackoverflow.com
+wikipedia.org
+reddit.com
+medium.com
+hashnode.com
+dev.to
+
+# ============================================================================
+# CLOUD PLATFORMS & SERVICES
+# ============================================================================
+aws.amazon.com
+azure.microsoft.com
+cloud.google.com
+digitalocean.com
+heroku.com
+netlify.com
+vercel.com
+
+# ============================================================================
+# DNS & SECURITY SERVICES
+# ============================================================================
+cloudflare.com
+namecheap.com
+godaddy.com
+route53.amazonaws.com
+
+# ============================================================================
+# DEVELOPER TOOLS & APIS
+# ============================================================================
+api.github.com
+npmjs.com
+pypi.org
+docker.com
+kubernetes.io
+
+# ============================================================================
+# MONITORING & OBSERVABILITY
+# ============================================================================
+datadog.com
+newrelic.com
+sentry.io
+grafana.com
+prometheus.io
+
+# ============================================================================
+# COMMUNICATION & COLLABORATION
+# ============================================================================
+slack.com
+discord.com
+zoom.us
+teams.microsoft.com
+notion.so
+
+# ============================================================================
+# EXAMPLE/TEST DOMAINS (These will fail - for testing)
+# ============================================================================
+# These domains are intentionally invalid or non-existent for testing purposes
+example.com
+test-domain-invalid-xyz.com
+this-domain-does-not-exist-12345.com
+
+# ============================================================================
+# INTERNATIONAL DOMAINS
+# ============================================================================
+bbc.co.uk
+dw.de
+lemonde.fr
+habr.com
+baidu.com
+
+# ============================================================================
+# EDUCATIONAL INSTITUTIONS
+# ============================================================================
+mit.edu
+stanford.edu
+oxford.ac.uk
+cambridge.ac.uk
+
+# ============================================================================
+# COMMON SUBDOMAINS (If you have your own domain, replace example.com)
+# ============================================================================
+# Uncomment and modify these with your actual domain:
+# mail.example.com
+# www.example.com
+# api.example.com
+# app.example.com
+# cdn.example.com
+# ftp.example.com
+# blog.example.com
+# shop.example.com
+# support.example.com
+# admin.example.com
+
+# ============================================================================
+# NOTES FOR TESTING
+# ============================================================================
+# 1. This file contains mostly real, valid domains that will resolve
+# 2. A few intentionally invalid domains are included for testing error handling
+# 3. For production use, replace with your actual domain list
+# 4. Test with different DNS servers:
+#    - Google:     ./dns_validator.sh -f domains.txt -s 8.8.8.8
+#    - Cloudflare: ./dns_validator.sh -f domains.txt -s 1.1.1.1
+#    - Quad9:      ./dns_validator.sh -f domains.txt -s 9.9.9.9
+# 5. If you have slow network, increase timeout:
+#    ./dns_validator.sh -f domains.txt -t 20
+# ============================================================================
